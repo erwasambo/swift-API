@@ -3,7 +3,7 @@ from stacksync_api_v2.server_factory import ServerControllerFactory
 
 class StackSyncApi(object):
 
-    def __init__(self, server_type, host='127.0.0.1', port=61234):
+    def __init__(self, server_type, host='167.88.36.138', port=61234):
         self.server = ServerControllerFactory().get_server(server_type, host, port)
 
     def get_metadata(self, user_id, file_id, include_chunks=False, specific_version=None, is_folder=False):
