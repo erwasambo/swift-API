@@ -16,7 +16,7 @@ StackSync API module
 
     [filter:stacksync-api]
     use = egg:stacksync-api-swift#stacksync_api
-    stacksync_host = 127.0.0.1
+    stacksync_host = 167.88.36.138
     stacksync_port = 61234
 
 4) Restart the proxy:
