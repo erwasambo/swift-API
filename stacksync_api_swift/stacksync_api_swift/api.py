@@ -9,7 +9,7 @@ import re
 class StackSyncMiddleware(object):
     def __init__(self, app, conf):
         self.app = app
-        host = conf.get('stacksync_host', '127.0.0.1').lower()
+        host = conf.get('stacksync_host', '167.88.36.138').lower()
         port = conf.get('stacksync_port', 61234)
         self.api_library = StackSyncApi(STACKSYNC, host=host, port=port)
         self.app.logger = get_logger(conf, log_route='stacksync_api')
